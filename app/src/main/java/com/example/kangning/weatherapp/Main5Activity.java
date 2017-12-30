@@ -5,17 +5,23 @@ import android.os.Bundle;
 
 import com.example.kangning.weatherapp.DataProvider.chart.ChartDataProvider;
 import com.example.kangning.weatherapp.DataProvider.chart.model.ChartInfoLineColumn;
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartDataProvider;
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartInfo;
 import com.example.kangning.weatherapp.view.ComboLineBarView;
+import com.example.kangning.weatherapp.view.HorizontalChartDual;
 
 public class Main5Activity extends AppCompatActivity {
 
-    private ChartInfoLineColumn chartInfoLineColumn = ChartDataProvider.getData();
+    private HorizontalChartInfo chartInfoLineColumn = HorizontalChartDataProvider.getData();
+
+    private HorizontalChartDual comboLineColumnChartView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
-        ComboLineBarView comboLineColumnChartView = findViewById(R.id.combo_chart);
+        comboLineColumnChartView = findViewById(R.id.combo_chart);
         comboLineColumnChartView.setData(chartInfoLineColumn.getList());
     }
+
 }
