@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.kangning.weatherapp.Main5Activity">
 
-    <com.example.kangning.weatherapp.view.HorizontalChartDual
+    <com.example.kangning.weatherapp.view.HorizontalChartSingle
         android:id="@+id/combo_chart"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.example.kangning.weatherapp.view.HorizontalChartDual>
+        android:layout_height="match_parent"></com.example.kangning.weatherapp.view.HorizontalChartSingle>
 </android.support.constraint.ConstraintLayout>

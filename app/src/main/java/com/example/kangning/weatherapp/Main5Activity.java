@@ -9,12 +9,13 @@ import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalCh
 import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartInfo;
 import com.example.kangning.weatherapp.view.ComboLineBarView;
 import com.example.kangning.weatherapp.view.HorizontalChartDual;
+import com.example.kangning.weatherapp.view.HorizontalChartSingle;
 
 public class Main5Activity extends AppCompatActivity {
 
     private HorizontalChartInfo chartInfoLineColumn = HorizontalChartDataProvider.getData();
 
-    private HorizontalChartDual comboLineColumnChartView;
+    private HorizontalChartSingle comboLineColumnChartView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
