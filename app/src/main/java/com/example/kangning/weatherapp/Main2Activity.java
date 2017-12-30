@@ -47,7 +47,8 @@ public class Main2Activity extends AppCompatActivity {
         measureLine = findViewById(R.id.measure_line);
         measureNum = findViewById(R.id.measure_num);
         measureNum.setText(horizontalChartInfo.getList().get(0).getNum() + "");
-        maxLength = measureLine.getWidth();
+        //todo why need -100
+        maxLength = measureLine.getWidth() - 100;
         forMeasure.setVisibility(View.GONE);
         recyclerView.setAdapter(new HorizontalChartAdapterDual(R.layout.listview_item_horizontal_chart_dual,
                 horizontalChartInfo.getList(),
