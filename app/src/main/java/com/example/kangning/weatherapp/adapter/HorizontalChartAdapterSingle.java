@@ -4,7 +4,7 @@ import android.widget.LinearLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartItem;
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartItem;
 import com.example.kangning.weatherapp.R;
 
 import java.util.List;

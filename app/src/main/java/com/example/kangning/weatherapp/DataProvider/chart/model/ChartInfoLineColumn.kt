@@ -1,4 +1,4 @@
-package com.example.kangning.weatherapp.DataProvider.chart
+package com.example.kangning.weatherapp.DataProvider.chart.model
 
 /**
  * Created by kangning on 2017/12/29.

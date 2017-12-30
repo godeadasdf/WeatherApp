@@ -1,5 +1,6 @@
 package com.example.kangning.weatherapp.DataProvider.horizontalChart;
 
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartInfo;
 import com.google.gson.Gson;
 
 /**

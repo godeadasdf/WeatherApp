@@ -1,5 +1,6 @@
 package com.example.kangning.weatherapp.DataProvider.chart;
 
+import com.example.kangning.weatherapp.DataProvider.chart.model.ChartInfoLineColumn;
 import com.google.gson.Gson;
 
 /**

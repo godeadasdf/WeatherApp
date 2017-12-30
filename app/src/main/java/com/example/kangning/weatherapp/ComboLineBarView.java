@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.example.kangning.weatherapp.DataProvider.chart.ChartItemLineColumn;
+import com.example.kangning.weatherapp.DataProvider.chart.model.ChartItemLineColumn;
 import com.github.mikephil.charting.charts.CombinedChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Description;

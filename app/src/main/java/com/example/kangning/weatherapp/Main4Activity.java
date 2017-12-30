@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartDataProvider;
-import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartInfo;
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartInfo;
 import com.example.kangning.weatherapp.adapter.HorizontalChartAdapterSingle;
 
 

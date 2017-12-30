@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.kangning.weatherapp.DataProvider.chart.ChartDataProvider;
-import com.example.kangning.weatherapp.DataProvider.chart.ChartInfoLineColumn;
-import com.example.kangning.weatherapp.DataProvider.chart.ChartItemLineColumn;
+import com.example.kangning.weatherapp.DataProvider.chart.model.ChartInfoLineColumn;
+import com.example.kangning.weatherapp.DataProvider.chart.model.ChartItemLineColumn;
 import com.github.mikephil.charting.charts.CombinedChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Description;

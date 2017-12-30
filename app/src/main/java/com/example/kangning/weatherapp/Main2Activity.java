@@ -4,13 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartDataProvider;
-import com.example.kangning.weatherapp.DataProvider.horizontalChart.HorizontalChartInfo;
+import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartInfo;
 import com.example.kangning.weatherapp.adapter.HorizontalChartAdapterDual;
 
 
