@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.kangning.weatherapp.DataProvider.horizontalChart.model.HorizontalChartItem;
 import com.example.kangning.weatherapp.R;
 import com.example.kangning.weatherapp.adapter.HorizontalChartAdapterDual;
@@ -28,6 +29,10 @@ public class HorizontalChartDual extends LinearLayout {
     private LinearLayout forMeasure;
     private LinearLayout measureLine;
     private TextView measureNum;
+
+    private int total = 100;
+
+    private LoadListener loadListener;
 
     private int maxLength; //条最大长度
     private List<HorizontalChartItem> data = null;
@@ -71,6 +76,31 @@ public class HorizontalChartDual extends LinearLayout {
                     data.get(0).getNum(),
                     (float) maxLength));
             recyclerView.setVisibility(View.VISIBLE);
+            setLoadMore();
         }
+    }
+
+    private void setLoadMore() {
+        final BaseQuickAdapter adapter = (BaseQuickAdapter) recyclerView.getAdapter();
+        adapter.setOnLoadMoreListener(new BaseQuickAdapter.RequestLoadMoreListener() {
+            @Override
+            public void onLoadMoreRequested() {
+                if (adapter.getData().size() >= total) {
+                    //数据全部加载完毕
+                    adapter.loadMoreEnd();
+                } else {
+                    adapter.addData(loadListener.loadMore());
+                    adapter.loadMoreComplete();
+                }
+            }
+        }, recyclerView);
+    }
+
+    public interface LoadListener {
+        List<HorizontalChartItem> loadMore();
+    }
+
+    public void setLoadListener(LoadListener loadListener) {
+        this.loadListener = loadListener;
     }
 }
