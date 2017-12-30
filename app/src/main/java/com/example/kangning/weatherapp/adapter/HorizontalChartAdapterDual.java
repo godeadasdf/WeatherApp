@@ -16,12 +16,13 @@ import java.util.List;
 
 public class HorizontalChartAdapterDual extends BaseQuickAdapter<HorizontalChartItem, BaseViewHolder> {
 
-    private float lineMaxLength = 1000f; //todo dp -> px
+    private float lineMaxLength; //todo dp -> px
     private float maxNum;
 
-    public HorizontalChartAdapterDual(int layoutResId, List data, float maxNum) {
+    public HorizontalChartAdapterDual(int layoutResId, List data, float maxNum,float lineMaxLength) {
         super(layoutResId, data);
         this.maxNum = maxNum;
+        this.lineMaxLength = lineMaxLength;
     }
 
     @Override
