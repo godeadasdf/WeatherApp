@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.kangning.weatherapp.Main5Activity">
 
-    <com.example.kangning.weatherapp.ComboLineBarView
+    <com.example.kangning.weatherapp.view.ComboLineBarView
         android:id="@+id/combo_chart"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></com.example.kangning.weatherapp.ComboLineBarView>
+        android:layout_height="wrap_content"></com.example.kangning.weatherapp.view.ComboLineBarView>
 </android.support.constraint.ConstraintLayout>

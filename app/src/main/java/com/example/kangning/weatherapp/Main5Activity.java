@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.example.kangning.weatherapp.DataProvider.chart.ChartDataProvider;
 import com.example.kangning.weatherapp.DataProvider.chart.model.ChartInfoLineColumn;
+import com.example.kangning.weatherapp.view.ComboLineBarView;
 
 public class Main5Activity extends AppCompatActivity {
 

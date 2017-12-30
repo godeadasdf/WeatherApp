@@ -1,4 +1,4 @@
-package com.example.kangning.weatherapp;
+package com.example.kangning.weatherapp.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.kangning.weatherapp.DataProvider.chart.model.ChartItemLineColumn;
+import com.example.kangning.weatherapp.R;
 import com.github.mikephil.charting.charts.CombinedChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Description;
